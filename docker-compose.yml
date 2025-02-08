@@ -1,0 +1,8 @@
+version: '3'
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/python:1-3.12-bullseye
+    container_name: python-dev
+    volumes:
+      - ./workspace:/workspace
+    command: tail -f /dev/null
