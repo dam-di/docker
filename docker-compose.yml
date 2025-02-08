@@ -6,4 +6,6 @@ services:
     volumes:
       - .:/workspace
     working_dir: /workspace
+    ports:
+      - "8080:5000"  # Exponer el puerto 5000 del contenedor en el host en el puerto 8080
     command: tail -f /dev/null
